@@ -50,25 +50,25 @@ import { Component } from '@angular/core';
           </p>
         </div>
 
-        <!-- Card 4: Support -->
+        <!-- Card 4: Efficiency -->
         <div class="bg-white p-6 rounded-[14px] border border-[#E5E7EB] shadow-sm hover:border-[#3B5BDB] transition-colors group">
           <div class="w-12 h-12 rounded-full bg-orange-50 text-orange-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-             <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3m8.293 8.293l1.414 1.414" /></svg>
+             <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
           </div>
-          <h4 class="text-xl font-bold text-[#1F2937] mb-2">Reduces Support & Regret</h4>
+          <h4 class="text-xl font-bold text-[#1F2937] mb-2">Operational Efficiency</h4>
           <p class="text-[#6B7280] text-sm leading-relaxed">
-            Consistent rules and "Recommended Ranges" manage organizer expectations upfront, reducing complaints about cut-off text or unreadable fonts.
+            Empowers attendees to self-navigate immediately. This directly reduces the queue volume at Info Desks answering 'Where do I go?' questions.
           </p>
         </div>
 
-        <!-- Card 5: Future -->
+        <!-- Card 5: Monetization (UPDATED) -->
         <div class="bg-white p-6 rounded-[14px] border border-[#E5E7EB] shadow-sm hover:border-[#3B5BDB] transition-colors group">
           <div class="w-12 h-12 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-             <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+             <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
           </div>
-          <h4 class="text-xl font-bold text-[#1F2937] mb-2">Leaves Room for Expansion</h4>
+          <h4 class="text-xl font-bold text-[#1F2937] mb-2">Monetization Opportunity</h4>
           <p class="text-[#6B7280] text-sm leading-relaxed">
-            Establishing a stable V1 foundation allows us to gather data on usage and potentially introduce advanced layout algorithms in V2.
+            Variable data printing slows down check-in throughput. To offset this operational 'cost,' this capability will be gated as a <strong>Premium Tier</strong> upgrade, driving upsell revenue.
           </p>
         </div>
 

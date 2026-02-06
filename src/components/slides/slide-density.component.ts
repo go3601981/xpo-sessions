@@ -29,29 +29,33 @@ import { Component } from '@angular/core';
                 <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold uppercase rounded-full tracking-wide">Default</span>
               </div>
               
-              <!-- Abstract Visual Representation -->
-              <div class="bg-gray-50 rounded-lg p-4 border border-gray-100 mb-6 space-y-3">
-                 <div class="h-4 bg-gray-300 rounded w-1/4 mb-4"></div> <!-- Header -->
-                 <!-- Items -->
-                 <div class="flex gap-3">
-                    <div class="w-16 h-12 bg-white border border-gray-200 rounded shadow-sm shrink-0"></div>
-                    <div class="flex-1 space-y-2 py-1">
-                        <div class="h-3 bg-gray-300 rounded w-3/4"></div>
-                        <div class="h-2 bg-gray-200 rounded w-1/2"></div>
+              <!-- Real Text Mockup -->
+              <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6 shadow-sm ring-4 ring-gray-50 relative overflow-hidden">
+                 <div class="absolute top-0 right-0 px-2 py-1 bg-gray-100 text-[10px] font-bold text-gray-400 rounded-bl">BADGE PREVIEW</div>
+                 
+                 <div class="space-y-4 font-sans mt-2">
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-2">
+                           <span class="text-sm font-bold text-blue-600">9:00 AM</span>
+                           <span class="text-xs font-semibold text-gray-400 uppercase tracking-wide">• Main Stage</span>
+                        </div>
+                        <span class="text-base font-bold text-gray-900 leading-tight">Welcome Keynote</span>
                     </div>
-                 </div>
-                 <div class="flex gap-3">
-                    <div class="w-16 h-12 bg-white border border-gray-200 rounded shadow-sm shrink-0"></div>
-                    <div class="flex-1 space-y-2 py-1">
-                        <div class="h-3 bg-gray-300 rounded w-4/5"></div>
-                        <div class="h-2 bg-gray-200 rounded w-1/3"></div>
+                    <div class="w-full h-px bg-gray-100"></div>
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-2">
+                           <span class="text-sm font-bold text-blue-600">10:30 AM</span>
+                           <span class="text-xs font-semibold text-gray-400 uppercase tracking-wide">• Room 204</span>
+                        </div>
+                        <span class="text-base font-bold text-gray-900 leading-tight">Product Strategy</span>
                     </div>
-                 </div>
-                 <div class="flex gap-3 opacity-50">
-                    <div class="w-16 h-12 bg-white border border-gray-200 rounded shadow-sm shrink-0"></div>
-                    <div class="flex-1 space-y-2 py-1">
-                        <div class="h-3 bg-gray-300 rounded w-2/3"></div>
-                        <div class="h-2 bg-gray-200 rounded w-1/2"></div>
+                    <div class="w-full h-px bg-gray-100"></div>
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-2">
+                           <span class="text-sm font-bold text-blue-600">12:00 PM</span>
+                           <span class="text-xs font-semibold text-gray-400 uppercase tracking-wide">• Hall B</span>
+                        </div>
+                        <span class="text-base font-bold text-gray-900 leading-tight">Networking Lunch</span>
                     </div>
                  </div>
               </div>
@@ -67,7 +71,7 @@ import { Component } from '@angular/core';
                 </li>
                 <li class="flex items-start gap-3 text-sm text-gray-600">
                   <svg class="w-5 h-5 text-blue-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span><strong>Lower Count:</strong> Displays top 3-4 upcoming sessions.</span>
+                  <span><strong>Full Context:</strong> Includes distinct location data.</span>
                 </li>
               </ul>
             </div>
@@ -86,36 +90,49 @@ import { Component } from '@angular/core';
                 <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-xs font-bold uppercase rounded-full tracking-wide">High Volume</span>
               </div>
 
-              <!-- Abstract Visual Representation -->
-              <div class="bg-gray-50 rounded-lg p-4 border border-gray-100 mb-6 space-y-2">
-                 <div class="h-4 bg-gray-300 rounded w-1/4 mb-3"></div> <!-- Header -->
-                 <!-- Items (More compacted) -->
-                 <div class="flex gap-2 items-center">
-                    <div class="w-12 h-8 bg-white border border-gray-200 rounded shadow-sm shrink-0"></div>
-                    <div class="flex-1 space-y-1">
-                        <div class="h-2.5 bg-gray-300 rounded w-3/4"></div>
-                        <div class="h-1.5 bg-gray-200 rounded w-1/2"></div>
+              <!-- Real Text Mockup -->
+              <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6 shadow-sm ring-4 ring-gray-50 relative overflow-hidden">
+                 <div class="absolute top-0 right-0 px-2 py-1 bg-gray-100 text-[10px] font-bold text-gray-400 rounded-bl">BADGE PREVIEW</div>
+
+                 <div class="space-y-2.5 font-sans mt-2">
+                    <div class="flex items-baseline gap-2">
+                        <div class="flex flex-col w-16 shrink-0">
+                           <span class="text-xs font-bold text-indigo-600 whitespace-nowrap">9:00 AM</span>
+                           <span class="text-[9px] text-gray-400 font-medium truncate">Stage 1</span>
+                        </div>
+                        <span class="text-sm font-bold text-gray-900 leading-tight truncate">Welcome Keynote</span>
                     </div>
-                 </div>
-                 <div class="flex gap-2 items-center">
-                    <div class="w-12 h-8 bg-white border border-gray-200 rounded shadow-sm shrink-0"></div>
-                    <div class="flex-1 space-y-1">
-                        <div class="h-2.5 bg-gray-300 rounded w-full"></div>
-                        <div class="h-1.5 bg-gray-200 rounded w-1/3"></div>
+                    <div class="w-full h-px bg-gray-100"></div>
+                    <div class="flex items-baseline gap-2">
+                         <div class="flex flex-col w-16 shrink-0">
+                           <span class="text-xs font-bold text-indigo-600 whitespace-nowrap">10:00 AM</span>
+                           <span class="text-[9px] text-gray-400 font-medium truncate">Rm 201</span>
+                        </div>
+                        <span class="text-sm font-bold text-gray-900 leading-tight truncate">Breakout Session A</span>
                     </div>
-                 </div>
-                 <div class="flex gap-2 items-center">
-                    <div class="w-12 h-8 bg-white border border-gray-200 rounded shadow-sm shrink-0"></div>
-                    <div class="flex-1 space-y-1">
-                        <div class="h-2.5 bg-gray-300 rounded w-4/5"></div>
-                        <div class="h-1.5 bg-gray-200 rounded w-1/4"></div>
+                    <div class="w-full h-px bg-gray-100"></div>
+                    <div class="flex items-baseline gap-2">
+                        <div class="flex flex-col w-16 shrink-0">
+                           <span class="text-xs font-bold text-indigo-600 whitespace-nowrap">10:00 AM</span>
+                           <span class="text-[9px] text-gray-400 font-medium truncate">Rm 202</span>
+                        </div>
+                        <span class="text-sm font-bold text-gray-900 leading-tight truncate">Breakout Session B</span>
                     </div>
-                 </div>
-                  <div class="flex gap-2 items-center">
-                    <div class="w-12 h-8 bg-white border border-gray-200 rounded shadow-sm shrink-0"></div>
-                    <div class="flex-1 space-y-1">
-                        <div class="h-2.5 bg-gray-300 rounded w-2/3"></div>
-                        <div class="h-1.5 bg-gray-200 rounded w-1/2"></div>
+                    <div class="w-full h-px bg-gray-100"></div>
+                    <div class="flex items-baseline gap-2">
+                        <div class="flex flex-col w-16 shrink-0">
+                           <span class="text-xs font-bold text-indigo-600 whitespace-nowrap">11:30 AM</span>
+                           <span class="text-[9px] text-gray-400 font-medium truncate">Lab A</span>
+                        </div>
+                        <span class="text-sm font-bold text-gray-900 leading-tight truncate">Workshop: Angular</span>
+                    </div>
+                    <div class="w-full h-px bg-gray-100"></div>
+                    <div class="flex items-baseline gap-2">
+                        <div class="flex flex-col w-16 shrink-0">
+                           <span class="text-xs font-bold text-indigo-600 whitespace-nowrap">1:00 PM</span>
+                           <span class="text-[9px] text-gray-400 font-medium truncate">Hall B</span>
+                        </div>
+                        <span class="text-sm font-bold text-gray-900 leading-tight truncate">Lunch & Learn</span>
                     </div>
                  </div>
               </div>
@@ -127,7 +144,7 @@ import { Component } from '@angular/core';
                 </li>
                 <li class="flex items-start gap-3 text-sm text-gray-600">
                   <svg class="w-5 h-5 text-indigo-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                  <span><strong>Efficient Spacing:</strong> 10pt minimum type, tighter leading.</span>
+                  <span><strong>Integrated Location:</strong> Room codes stacked under time.</span>
                 </li>
                 <li class="flex items-start gap-3 text-sm text-gray-600">
                   <svg class="w-5 h-5 text-indigo-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>

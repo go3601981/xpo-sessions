@@ -81,19 +81,19 @@ import { Component } from '@angular/core';
           </p>
         </div>
 
-        <!-- Criterion 5 -->
+        <!-- Criterion 5: UPDATED -->
         <div class="bg-white p-6 rounded-[14px] border border-[#E5E7EB] shadow-[0_1px_2px_rgba(0,0,0,0.04)] flex flex-col relative overflow-hidden">
            <div class="absolute top-0 right-0 p-3 opacity-10">
-             <svg class="w-20 h-20 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+             <svg class="w-20 h-20 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" /></svg>
           </div>
           <div class="flex items-center gap-3 mb-3">
              <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">
                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
              </div>
-             <h4 class="font-bold text-[#1F2937]">Data Integrity</h4>
+             <h4 class="font-bold text-[#1F2937]">Truncation Logic</h4>
           </div>
           <p class="text-sm text-[#6B7280] leading-relaxed">
-            Data matches the system of record at the exact timestamp of printing. No predictive or "fuzzy" data.
+            Titles wrap to max 2 lines, then ellipse. No dynamic font scaling to fit text.
           </p>
         </div>
 

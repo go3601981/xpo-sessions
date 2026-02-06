@@ -71,20 +71,23 @@ import { Component } from '@angular/core';
 
       </div>
 
-      <!-- Bottom Principle Bar -->
-      <div class="w-full bg-[#1F2937] text-white p-6 rounded-[14px] flex items-center justify-between shadow-lg">
-        <div class="flex items-center gap-4">
-          <div class="p-2 bg-white/10 rounded-lg">
-            <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+      <!-- Bottom Principle Bar: UPDATED FOR CONTRAST -->
+      <div class="w-full bg-[#1F2937] text-white p-6 rounded-[14px] flex flex-col md:flex-row items-center justify-between shadow-lg gap-4">
+        <div class="flex items-start gap-4">
+          <div class="p-3 bg-white/10 rounded-lg shrink-0">
+            <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
           </div>
           <div>
-            <h5 class="font-bold text-sm md:text-base">Physiology is Non-Negotiable</h5>
-            <p class="text-xs md:text-sm text-gray-400">Information density must yield to optical limitations.</p>
+            <h5 class="font-bold text-base text-white mb-1">Additional V1 Requirement: High-Contrast Zones</h5>
+            <p class="text-sm text-gray-300 leading-relaxed max-w-3xl">
+                Legibility is strictly a function of contrast. Dynamic text <strong>must</strong> sit on a white or light-grey background. 
+                <span class="text-yellow-400 font-medium">Full-bleed background images are prohibited behind schedule data</span> to prevent contrast failure.
+            </p>
           </div>
         </div>
-        <div class="hidden md:block">
-            <span class="inline-flex items-center px-3 py-1 rounded bg-green-500/20 text-green-400 text-xs font-bold uppercase border border-green-500/30">
-                Approved Standard
+        <div class="shrink-0">
+            <span class="inline-flex items-center px-4 py-1.5 rounded bg-white/10 text-white text-xs font-bold uppercase border border-white/20 tracking-wider">
+                Mandatory
             </span>
         </div>
       </div>
