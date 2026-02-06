@@ -12,6 +12,8 @@ import { SlideRulesComponent } from './components/slides/slide-rules.component';
 import { SlideDensityComponent } from './components/slides/slide-density.component';
 import { SlideCriteriaComponent } from './components/slides/slide-criteria.component';
 import { SlideConclusionComponent } from './components/slides/slide-conclusion.component';
+import { SlideSessionCountsComponent } from './components/slides/slide-session-counts.component';
+import { SlideWhyV1Component } from './components/slides/slide-why-v1.component';
 
 @Component({
   selector: 'app-root',
@@ -28,7 +30,9 @@ import { SlideConclusionComponent } from './components/slides/slide-conclusion.c
     SlideRulesComponent,
     SlideDensityComponent,
     SlideCriteriaComponent,
-    SlideConclusionComponent
+    SlideConclusionComponent,
+    SlideSessionCountsComponent,
+    SlideWhyV1Component
   ],
   templateUrl: './app.component.html'
 })
