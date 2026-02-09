@@ -14,6 +14,11 @@ import { SlideCriteriaComponent } from './components/slides/slide-criteria.compo
 import { SlideConclusionComponent } from './components/slides/slide-conclusion.component';
 import { SlideSessionCountsComponent } from './components/slides/slide-session-counts.component';
 import { SlideWhyV1Component } from './components/slides/slide-why-v1.component';
+import { SlideOrientationComponent } from './components/slides/slide-orientation.component';
+import { SlideFilteringComponent } from './components/slides/slide-filtering.component';
+import { SlideMultiDayComponent } from './components/slides/slide-multi-day.component';
+import { SlideImplementationComponent } from './components/slides/slide-implementation.component';
+import { SlideEdgeCasesComponent } from './components/slides/slide-edge-cases.component';
 
 @Component({
   selector: 'app-root',
@@ -32,7 +37,12 @@ import { SlideWhyV1Component } from './components/slides/slide-why-v1.component'
     SlideCriteriaComponent,
     SlideConclusionComponent,
     SlideSessionCountsComponent,
-    SlideWhyV1Component
+    SlideWhyV1Component,
+    SlideOrientationComponent,
+    SlideFilteringComponent,
+    SlideMultiDayComponent,
+    SlideImplementationComponent,
+    SlideEdgeCasesComponent
   ],
   templateUrl: './app.component.html'
 })

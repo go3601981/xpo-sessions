@@ -11,95 +11,68 @@ import { Component } from '@angular/core';
         <h2 class="text-[#3B5BDB] font-semibold uppercase tracking-wider text-sm mb-3">Data Selection Strategy</h2>
         <h3 class="text-3xl md:text-4xl font-bold text-[#1F2937]">The "Three Pillars" of Wayfinding</h3>
         <p class="text-[#6B7280] mt-4 max-w-3xl text-lg">
-          To ensure the badge is a standalone navigation tool, we now include Location. This forces stricter character limits on titles but closes the "Where do I go?" loop.
+          We include Time, Location, and Title. Date is handled contextually for multi-day events.
         </p>
       </div>
 
       <!-- Main Content Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
         
         <!-- Field 1: Start Time -->
-        <div class="bg-white p-6 rounded-[14px] border border-[#E5E7EB] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)] relative overflow-hidden group hover:border-[#3B5BDB] transition-colors">
-          <div class="flex items-start justify-between mb-4">
-            <div class="p-2 bg-blue-50 text-blue-600 rounded-lg">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-            </div>
-            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded-full text-[10px] font-bold uppercase tracking-wide">Sort Key</span>
+        <div class="bg-white p-5 rounded-[14px] border border-[#E5E7EB] shadow-sm">
+          <div class="flex items-center gap-2 mb-3">
+             <div class="p-1.5 bg-blue-50 text-blue-600 rounded">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+             </div>
+             <h4 class="font-bold text-[#1F2937]">Start Time</h4>
           </div>
-          
-          <h4 class="text-xl font-bold text-[#1F2937] mb-3">Start Time</h4>
-          
-          <ul class="space-y-3 text-sm text-[#4B5563]">
-            <li class="flex gap-2">
-              <svg class="w-4 h-4 text-green-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <span><strong>Primary Anchor:</strong> The absolute sorting mechanism.</span>
-            </li>
-            <li class="flex gap-2">
-              <svg class="w-4 h-4 text-green-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <span><strong>Context:</strong> Instant answer to "Am I late?"</span>
-            </li>
-          </ul>
+          <p class="text-xs text-gray-500">The absolute sort key. Answers "Am I late?"</p>
         </div>
 
-        <!-- Field 2: Location (NEW) -->
-        <div class="bg-white p-6 rounded-[14px] border border-[#E5E7EB] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)] relative overflow-hidden group hover:border-[#3B5BDB] transition-colors">
-          <div class="flex items-start justify-between mb-4">
-            <div class="p-2 bg-orange-50 text-orange-600 rounded-lg">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-            </div>
-            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded-full text-[10px] font-bold uppercase tracking-wide">Wayfinding</span>
+        <!-- Field 2: Location -->
+        <div class="bg-white p-5 rounded-[14px] border border-[#E5E7EB] shadow-sm">
+          <div class="flex items-center gap-2 mb-3">
+             <div class="p-1.5 bg-orange-50 text-orange-600 rounded">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /></svg>
+             </div>
+             <h4 class="font-bold text-[#1F2937]">Location</h4>
           </div>
-          
-          <h4 class="text-xl font-bold text-[#1F2937] mb-3">Room / Location</h4>
-          
-          <ul class="space-y-3 text-sm text-[#4B5563]">
-            <li class="flex gap-2">
-              <svg class="w-4 h-4 text-green-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <span><strong>Actionable:</strong> Eliminates the need to open the app to find "Where."</span>
-            </li>
-            <li class="flex gap-2">
-              <svg class="w-4 h-4 text-green-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <span><strong>Abbreviated:</strong> Uses short-codes (e.g. "Rm 102", "Hall B").</span>
-            </li>
-          </ul>
+          <p class="text-xs text-gray-500">Closes the wayfinding loop. Uses short-codes (e.g. "Rm 102").</p>
         </div>
 
-        <!-- Field 3: Session Title -->
-        <div class="bg-white p-6 rounded-[14px] border border-[#E5E7EB] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)] relative overflow-hidden group hover:border-[#3B5BDB] transition-colors">
-          <div class="flex items-start justify-between mb-4">
-            <div class="p-2 bg-indigo-50 text-indigo-600 rounded-lg">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-            </div>
-            <span class="px-2 py-1 bg-gray-100 text-gray-600 rounded-full text-[10px] font-bold uppercase tracking-wide">Verification</span>
+        <!-- Field 3: Title -->
+        <div class="bg-white p-5 rounded-[14px] border border-[#E5E7EB] shadow-sm">
+          <div class="flex items-center gap-2 mb-3">
+             <div class="p-1.5 bg-indigo-50 text-indigo-600 rounded">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+             </div>
+             <h4 class="font-bold text-[#1F2937]">Session Title</h4>
           </div>
-          
-          <h4 class="text-xl font-bold text-[#1F2937] mb-3">Session Title</h4>
-          
-          <ul class="space-y-3 text-sm text-[#4B5563]">
-            <li class="flex gap-2">
-              <svg class="w-4 h-4 text-green-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <span><strong>Truncated:</strong> Aggressively shortened to fit lines shared with Location.</span>
-            </li>
-            <li class="flex gap-2">
-              <svg class="w-4 h-4 text-green-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-              <span><strong>Context:</strong> "Topic" recognition over full grammar.</span>
-            </li>
-          </ul>
+          <p class="text-xs text-gray-500">Truncated for context. Topic recognition over grammar.</p>
+        </div>
+
+        <!-- Field 4: Date (NEW) -->
+        <div class="bg-white p-5 rounded-[14px] border border-[#E5E7EB] shadow-sm">
+          <div class="flex items-center gap-2 mb-3">
+             <div class="p-1.5 bg-teal-50 text-teal-600 rounded">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+             </div>
+             <h4 class="font-bold text-[#1F2937]">Date Support</h4>
+          </div>
+          <p class="text-xs text-gray-500">Day Headers for multi-day events. Essential for conferences.</p>
         </div>
 
       </div>
 
-      <!-- Mitigation / Liability Note -->
-      <div class="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg flex items-center gap-6">
-        <div class="hidden md:block p-3 bg-white rounded-full shadow-sm text-amber-500">
-           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+      <!-- Optional Footer -->
+      <div class="bg-gray-50 border-l-4 border-gray-400 p-6 rounded-r-lg">
+        <div class="flex items-center justify-between mb-2">
+           <h4 class="text-gray-800 font-bold text-lg">Disclaimer Strategy: Optional Recommendation</h4>
+           <span class="px-2 py-1 bg-gray-200 text-gray-600 text-[10px] font-bold uppercase rounded">Organizer Controlled</span>
         </div>
-        <div>
-           <h4 class="text-amber-800 font-bold text-lg mb-1">Mitigation: The Static Snapshot Rule</h4>
-           <p class="text-amber-700 text-base leading-relaxed">
-             To protect against schedule changes after printing, every badge <strong>MUST</strong> include a static footer: 'Check App for Updates.' This shifts the 'Source of Truth' liability back to the digital state.
-           </p>
-        </div>
+        <p class="text-gray-600 text-base leading-relaxed mb-2">
+           Printing implies non-real-time updates. Organizers <em>may</em> choose to add a static footer ("Check App for Updates") to mitigate liability, but this is <strong>not mandatory</strong>.
+        </p>
       </div>
 
     </div>
