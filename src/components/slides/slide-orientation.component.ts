@@ -52,10 +52,10 @@ import { Component } from '@angular/core';
            <!-- Normal -->
            <div class="flex flex-col items-center gap-3">
               <div class="w-32 h-48 bg-white border border-gray-300 shadow flex flex-col relative overflow-hidden">
-                 <!-- Punch slot area -->
+                 <!-- Punch slot area - Top -->
                  <div class="absolute top-2 left-1/2 -translate-x-1/2 w-12 h-1.5 bg-gray-200 rounded-full"></div>
                  
-                 <!-- Dummy Content -->
+                 <!-- Dummy Content - Top Down -->
                  <div class="mt-8 px-3 space-y-2">
                     <div class="border-b border-gray-100 pb-1">
                       <div class="flex justify-between text-[6px] font-bold text-gray-800">
@@ -86,33 +86,34 @@ import { Component } from '@angular/core';
            <!-- Inverted -->
            <div class="flex flex-col items-center gap-3">
               <div class="w-32 h-48 bg-white border border-gray-300 shadow flex flex-col relative overflow-hidden">
-                 <!-- Punch slot area (Visual reference, physically at bottom in this view but conceptually top of badge) -->
-                 <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-12 h-1.5 bg-gray-200 rounded-full"></div>
+                 <!-- Punch slot area - Still Top (Badge is physically upright) -->
+                 <div class="absolute top-2 left-1/2 -translate-x-1/2 w-12 h-1.5 bg-gray-200 rounded-full"></div>
                  
-                 <!-- Dummy Content (Rotated 180) -->
-                 <div class="absolute inset-0 flex flex-col justify-end pb-8 px-3 rotate-180">
-                    <div class="space-y-2">
-                        <div class="border-b border-gray-100 pb-1">
-                          <div class="flex justify-between text-[6px] font-bold text-gray-800">
-                            <span>9:00 AM</span>
-                            <span>Keynote</span>
-                          </div>
-                          <div class="text-[5px] text-gray-500">Main Stage</div>
+                 <!-- Dummy Content - Bottom Up (Rotated 180) -->
+                 <div class="absolute inset-x-0 bottom-0 pb-6 px-3">
+                    <div class="rotate-180 space-y-2">
+                      <!-- Content is identical to Standard but container is rotated -->
+                      <div class="border-b border-gray-100 pb-1">
+                        <div class="flex justify-between text-[6px] font-bold text-gray-800">
+                          <span>9:00 AM</span>
+                          <span>Keynote</span>
                         </div>
-                        <div class="border-b border-gray-100 pb-1">
-                          <div class="flex justify-between text-[6px] font-bold text-gray-800">
-                            <span>10:30 AM</span>
-                            <span>Breakout</span>
-                          </div>
-                          <div class="text-[5px] text-gray-500">Room 101</div>
+                        <div class="text-[5px] text-gray-500">Main Stage</div>
+                      </div>
+                      <div class="border-b border-gray-100 pb-1">
+                        <div class="flex justify-between text-[6px] font-bold text-gray-800">
+                          <span>10:30 AM</span>
+                          <span>Breakout</span>
                         </div>
-                        <div>
-                          <div class="flex justify-between text-[6px] font-bold text-gray-800">
-                            <span>12:00 PM</span>
-                            <span>Lunch</span>
-                          </div>
-                          <div class="text-[5px] text-gray-500">Hall B</div>
+                        <div class="text-[5px] text-gray-500">Room 101</div>
+                      </div>
+                      <div>
+                        <div class="flex justify-between text-[6px] font-bold text-gray-800">
+                          <span>12:00 PM</span>
+                          <span>Lunch</span>
                         </div>
+                        <div class="text-[5px] text-gray-500">Hall B</div>
+                      </div>
                     </div>
                  </div>
               </div>

@@ -42,7 +42,7 @@ import { Component } from '@angular/core';
                      </div>
                 </div>
               </div>
-              <span class="text-sm font-bold text-gray-700">4" × 6" Standard</span>
+              <span class="text-sm font-bold text-gray-700">4" × 6" Badge</span>
             </div>
 
             <!-- 4x3 Badge -->
@@ -66,7 +66,7 @@ import { Component } from '@angular/core';
                      </div>
                 </div>
               </div>
-              <span class="text-sm font-bold text-gray-700">4" × 3" Compact</span>
+              <span class="text-sm font-bold text-gray-700">4" × 3" Badge</span>
             </div>
 
           </div>
