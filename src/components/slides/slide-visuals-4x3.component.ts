@@ -162,11 +162,11 @@ import { CommonModule } from '@angular/common';
                     <h2 class="text-[9px] font-bold text-black uppercase">Fri, Feb 6</h2>
                   </div>
                   <div class="flex flex-col gap-[2px]">
-                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">9:00</span> <span class="text-[9px] text-black truncate flex-1">Keynote</span> <span class="text-[8px] text-gray-500 w-6 text-right">Main</span></div>
-                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">10:00</span> <span class="text-[9px] text-black truncate flex-1">Product</span> <span class="text-[8px] text-gray-500 w-6 text-right">R101</span></div>
-                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">11:00</span> <span class="text-[9px] text-black truncate flex-1">Design</span> <span class="text-[8px] text-gray-500 w-6 text-right">R105</span></div>
-                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">12:00</span> <span class="text-[9px] text-black truncate flex-1">Lunch</span> <span class="text-[8px] text-gray-500 w-6 text-right">Hall</span></div>
-                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">1:00</span> <span class="text-[9px] text-black truncate flex-1">Sales</span> <span class="text-[8px] text-gray-500 w-6 text-right">R202</span></div>
+                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">9:00</span> <span class="text-[9px] text-black truncate flex-1">Opening Keynote Address</span> <span class="text-[8px] text-gray-500 w-6 text-right">Main</span></div>
+                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">10:00</span> <span class="text-[9px] text-black truncate flex-1">Product Strategy Roadmap</span> <span class="text-[8px] text-gray-500 w-6 text-right">R101</span></div>
+                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">11:00</span> <span class="text-[9px] text-black truncate flex-1">UX Design Systems</span> <span class="text-[8px] text-gray-500 w-6 text-right">R105</span></div>
+                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">12:00</span> <span class="text-[9px] text-black truncate flex-1">Networking Lunch Break</span> <span class="text-[8px] text-gray-500 w-6 text-right">Hall</span></div>
+                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">1:00</span> <span class="text-[9px] text-black truncate flex-1">Global Sales Kickoff</span> <span class="text-[8px] text-gray-500 w-6 text-right">R202</span></div>
                   </div>
                 </div>
 
@@ -176,11 +176,11 @@ import { CommonModule } from '@angular/common';
                     <h2 class="text-[9px] font-bold text-black uppercase">Sat, Feb 7</h2>
                   </div>
                   <div class="flex flex-col gap-[2px]">
-                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">9:00</span> <span class="text-[9px] text-black truncate flex-1">Breakfast</span> <span class="text-[8px] text-gray-500 w-6 text-right">Cafe</span></div>
-                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">10:00</span> <span class="text-[9px] text-black truncate flex-1">Workshop</span> <span class="text-[8px] text-gray-500 w-6 text-right">R204</span></div>
-                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">11:00</span> <span class="text-[9px] text-black truncate flex-1">Coding</span> <span class="text-[8px] text-gray-500 w-6 text-right">Lab</span></div>
-                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">12:00</span> <span class="text-[9px] text-black truncate flex-1">Lunch</span> <span class="text-[8px] text-gray-500 w-6 text-right">Hall</span></div>
-                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">1:00</span> <span class="text-[9px] text-black truncate flex-1">Panel</span> <span class="text-[8px] text-gray-500 w-6 text-right">Main</span></div>
+                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">9:00</span> <span class="text-[9px] text-black truncate flex-1">Morning Coffee & Bagels</span> <span class="text-[8px] text-gray-500 w-6 text-right">Cafe</span></div>
+                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">10:00</span> <span class="text-[9px] text-black truncate flex-1">Interactive Workshop Lab</span> <span class="text-[8px] text-gray-500 w-6 text-right">R204</span></div>
+                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">11:00</span> <span class="text-[9px] text-black truncate flex-1">Live Coding Session</span> <span class="text-[8px] text-gray-500 w-6 text-right">Lab</span></div>
+                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">12:00</span> <span class="text-[9px] text-black truncate flex-1">Partner Showcase Lunch</span> <span class="text-[8px] text-gray-500 w-6 text-right">Hall</span></div>
+                    <div class="flex gap-2 items-baseline"><span class="text-[9px] font-bold text-black whitespace-nowrap w-8">1:00</span> <span class="text-[9px] text-black truncate flex-1">Closing Leadership Panel</span> <span class="text-[8px] text-gray-500 w-6 text-right">Main</span></div>
                   </div>
                 </div>
 

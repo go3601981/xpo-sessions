@@ -107,11 +107,11 @@ import { CommonModule } from '@angular/common';
           <div class="relative bg-white rounded shadow-lg border border-gray-300 overflow-hidden flex flex-col" style="width: 260px; height: 390px;">
             <div class="absolute top-3 left-1/2 -translate-x-1/2 w-12 h-2 bg-gray-200 rounded-full z-20"></div>
             
-            <div class="flex-1 mx-4 mt-8 mb-4 flex flex-col">
+            <div class="flex-1 mx-4 mt-8 mb-4 flex flex-col gap-5">
               
-              <!-- Day 1 Block (5 Items) -->
-              <div class="flex-1 flex flex-col mb-2">
-                <div class="border-b-2 border-black pb-1 mb-2">
+              <!-- Day 1 Block (5 Items) - Removed flex-1 to tighten spacing -->
+              <div class="flex flex-col">
+                <div class="border-b-2 border-black pb-1 mb-1.5">
                   <h2 class="text-sm font-bold text-black uppercase">Friday, Feb 6</h2>
                 </div>
                 <div class="flex flex-col gap-2">
@@ -138,9 +138,9 @@ import { CommonModule } from '@angular/common';
                 </div>
               </div>
 
-              <!-- Day 2 Block (5 Items) -->
-              <div class="flex-1 flex flex-col">
-                <div class="border-b-2 border-black pb-1 mb-2">
+              <!-- Day 2 Block (5 Items) - Removed flex-1 to tighten spacing -->
+              <div class="flex flex-col">
+                <div class="border-b-2 border-black pb-1 mb-1.5">
                   <h2 class="text-sm font-bold text-black uppercase">Saturday, Feb 7</h2>
                 </div>
                 <div class="flex flex-col gap-2">
@@ -181,102 +181,102 @@ import { CommonModule } from '@angular/common';
           <div class="relative bg-white rounded shadow-lg border border-gray-300 overflow-hidden flex flex-col" style="width: 260px; height: 390px;">
             <div class="absolute top-3 left-1/2 -translate-x-1/2 w-12 h-2 bg-gray-200 rounded-full z-20"></div>
             
-            <div class="flex-1 mx-4 mt-8 mb-2 flex flex-col gap-3">
+            <div class="flex-1 mx-4 mt-7 mb-2 flex flex-col gap-2">
               
               <!-- Day 1 Block (8 Items) -->
               <div class="flex flex-col">
-                <div class="border-b border-black pb-0.5 mb-1.5">
-                  <h2 class="text-xs font-bold text-black uppercase">Friday, Feb 6</h2>
+                <div class="border-b border-black pb-0.5 mb-1">
+                  <h2 class="text-[10px] font-bold text-black uppercase">Friday, Feb 6</h2>
                 </div>
-                <div class="flex flex-col gap-1">
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">09:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Arrivals</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">Lobby</span>
+                <div class="flex flex-col gap-[3px]">
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">09:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">Registration & Welcome Kit</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">Lobby A</span>
                    </div>
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">10:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Keynote</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">Main</span>
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">10:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">Opening Keynote: Future Tech</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">Main</span>
                    </div>
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">11:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Breakout A</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">R101</span>
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">11:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">Scaling Product Teams Globally</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">R101</span>
                    </div>
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">12:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Lunch</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">Hall</span>
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">12:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">Networking Lunch & Connect</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">Hall</span>
                    </div>
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">01:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Workshop</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">R202</span>
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">01:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">Design Systems Workshop Lab</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">R202</span>
                    </div>
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">02:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Panel</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">Main</span>
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">02:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">Executive Leadership Panel Talk</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">Main</span>
                    </div>
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">03:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Coffee</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">Bar</span>
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">03:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">Afternoon Coffee & Networking</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">Bar</span>
                    </div>
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">04:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Mixer</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">Roof</span>
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">04:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">Rooftop Social Mixer Event</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">Roof</span>
                    </div>
                 </div>
               </div>
 
               <!-- Day 2 Block (8 Items) -->
               <div class="flex flex-col">
-                <div class="border-b border-black pb-0.5 mb-1.5">
-                  <h2 class="text-xs font-bold text-black uppercase">Saturday, Feb 7</h2>
+                <div class="border-b border-black pb-0.5 mb-1">
+                  <h2 class="text-[10px] font-bold text-black uppercase">Saturday, Feb 7</h2>
                 </div>
-                <div class="flex flex-col gap-1">
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">09:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Yoga</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">Lawn</span>
+                <div class="flex flex-col gap-[3px]">
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">09:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">Morning Wellness Yoga Session</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">Lawn</span>
                    </div>
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">10:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Strategy</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">R104</span>
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">10:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">Product Strategy Deep Dive</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">R104</span>
                    </div>
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">11:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Design</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">R105</span>
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">11:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">UX Trends For 2026</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">R105</span>
                    </div>
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">12:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Lunch</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">Hall</span>
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">12:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">Partner Showcase & Lunch</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">Hall</span>
                    </div>
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">01:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Coding</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">Lab</span>
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">01:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">Live Coding Demo Lab</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">Lab</span>
                    </div>
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">02:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Demo</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">Stage</span>
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">02:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">Sponsor Technology Showcase</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">Stage</span>
                    </div>
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">03:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Awards</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">Main</span>
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">03:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">Community Awards Ceremony</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">Main</span>
                    </div>
-                   <div class="flex gap-2 items-baseline border-b border-gray-100 pb-0.5">
-                     <span class="w-8 shrink-0 text-[10px] font-bold text-black whitespace-nowrap">04:00</span>
-                     <span class="flex-1 text-[9px] text-black truncate">Farewell</span>
-                     <span class="text-[8px] text-gray-500 truncate w-8 text-right">Exit</span>
+                   <div class="flex gap-1.5 items-baseline border-b border-gray-100 pb-[1px]">
+                     <span class="w-7 shrink-0 text-[8px] font-bold text-black whitespace-nowrap">04:00</span>
+                     <span class="flex-1 text-[8px] text-black truncate">Closing Remarks & Farewell</span>
+                     <span class="text-[7px] text-gray-500 truncate w-10 text-right">Exit</span>
                    </div>
                 </div>
               </div>
