@@ -19,6 +19,8 @@ import { SlideFilteringComponent } from './components/slides/slide-filtering.com
 import { SlideMultiDayComponent } from './components/slides/slide-multi-day.component';
 import { SlideImplementationComponent } from './components/slides/slide-implementation.component';
 import { SlideEdgeCasesComponent } from './components/slides/slide-edge-cases.component';
+import { SlideVisuals4x3Component } from './components/slides/slide-visuals-4x3.component';
+import { SlideVisuals4x6Component } from './components/slides/slide-visuals-4x6.component';
 
 @Component({
   selector: 'app-root',
@@ -42,7 +44,9 @@ import { SlideEdgeCasesComponent } from './components/slides/slide-edge-cases.co
     SlideFilteringComponent,
     SlideMultiDayComponent,
     SlideImplementationComponent,
-    SlideEdgeCasesComponent
+    SlideEdgeCasesComponent,
+    SlideVisuals4x3Component,
+    SlideVisuals4x6Component
   ],
   templateUrl: './app.component.html'
 })
