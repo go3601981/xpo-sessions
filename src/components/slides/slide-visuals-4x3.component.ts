@@ -84,15 +84,16 @@ import { CommonModule } from '@angular/common';
           <div class="relative bg-white rounded shadow-lg border border-gray-300 overflow-hidden flex flex-col" style="width: 320px; height: 240px;">
             <div class="absolute top-2 left-1/2 -translate-x-1/2 w-16 h-2 bg-gray-200 rounded-full z-20"></div>
             
-            <div class="flex-1 mx-4 mt-8 mb-3 flex flex-col">
+            <!-- Reduced top margin from mt-8 to mt-6 to prevent cut-off -->
+            <div class="flex-1 mx-4 mt-6 mb-3 flex flex-col">
               
               <!-- Day Header -->
               <div class="border-b border-black pb-1 mb-1.5">
                 <h2 class="text-base font-bold text-black uppercase tracking-tight">Friday, Feb 6</h2>
               </div>
 
-              <!-- Schedule List (Compact spacing) -->
-              <div class="flex-1 flex flex-col justify-start gap-1.5">
+              <!-- Schedule List (Compact spacing: Reduced gap from 1.5 to 1) -->
+              <div class="flex-1 flex flex-col justify-start gap-1">
                  
                  <div class="flex gap-2 items-baseline">
                    <div class="w-14 shrink-0 text-xs font-bold text-black whitespace-nowrap">9:00 AM</div>
@@ -133,8 +134,6 @@ import { CommonModule } from '@angular/common';
                      <div class="text-[10px] text-gray-600 truncate">Room 205</div>
                    </div>
                  </div>
-                 
-                 <!-- Item 6 Removed because it was cut in half -->
 
               </div>
             </div>
