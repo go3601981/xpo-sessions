@@ -48,7 +48,121 @@ import { SlideVisuals4x6Component } from './components/slides/slide-visuals-4x6.
     SlideVisuals4x3Component,
     SlideVisuals4x6Component
   ],
-  templateUrl: './app.component.html'
+  template: `
+    <app-logo />
+
+    <main class="w-full h-screen bg-[#F8FAFC] overflow-hidden relative pb-20">
+      
+      <!-- Slide Container -->
+      <!-- We use CSS transitions for opacity/transform based on active index -->
+      
+      @switch (presentation.currentSlideIndex()) {
+        @case (0) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-title />
+          </div>
+        }
+        @case (1) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-problem />
+          </div>
+        }
+        @case (2) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-solution />
+          </div>
+        }
+        @case (3) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-metrics />
+          </div>
+        }
+        @case (4) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-orientation />
+          </div>
+        }
+        @case (5) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-legibility />
+          </div>
+        }
+        @case (6) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-rules />
+          </div>
+        }
+        @case (7) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-filtering />
+          </div>
+        }
+        @case (8) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-conclusion />
+          </div>
+        }
+        @case (9) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-multi-day />
+          </div>
+        }
+        @case (10) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-session-counts />
+          </div>
+        }
+        @case (11) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-density />
+          </div>
+        }
+        @case (12) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-criteria />
+          </div>
+        }
+        @case (13) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-implementation />
+          </div>
+        }
+        @case (14) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-edge-cases />
+          </div>
+        }
+        @case (15) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-why-v1 />
+          </div>
+        }
+        @case (16) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-visuals-4x3 />
+          </div>
+        }
+        @case (17) {
+          <div class="w-full h-full animate-fade-in">
+            <app-slide-visuals-4x6 />
+          </div>
+        }
+      }
+
+    </main>
+
+    <app-nav-bar />
+  `,
+  styles: [`
+    .animate-fade-in {
+      animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  `]
 })
 export class AppComponent {
   presentation = inject(PresentationService);
